@@ -13,13 +13,12 @@
         android:id="@+id/malwaresDetected"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="80dp"
-        android:text="Malwares Detected"
+        android:layout_marginTop="92dp"
+        android:text="Malicious Features Detected"
         android:textColor="@color/white"
         android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.504"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout"
         tools:ignore="MissingConstraints" />
@@ -80,50 +79,6 @@
         tools:ignore="MissingConstraints" />
 
     <TextView
-        android:id="@+id/percentageResultText3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="24dp"
-        android:text="33% Trojan"
-        android:textColor="@color/white"
-        android:textSize="16sp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
-        tools:ignore="MissingConstraints" />
-
-    <TextView
-        android:id="@+id/percentageResultText5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:text="33% Spyware"
-        android:textColor="@color/white"
-        android:textSize="16sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/percentageResultText4"
-        app:layout_constraintStart_toEndOf="@+id/percentageResultText3"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
-        app:layout_constraintVertical_bias="0.0"
-        tools:ignore="MissingConstraints" />
-
-    <TextView
-        android:id="@+id/percentageResultText4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="16dp"
-        android:text="33% Ransomware"
-        android:textColor="@color/white"
-        android:textSize="16sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
-        tools:ignore="MissingConstraints" />
-
-    <TextView
         android:id="@+id/scanResultText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -163,63 +118,33 @@
             android:background="#e74c3c" />
     </LinearLayout>
 
-    <LinearLayout
-        android:id="@+id/linearLayout2"
-        android:layout_width="match_parent"
-        android:layout_height="20dp"
-        android:layout_marginTop="32dp"
-        android:orientation="horizontal"
-        android:weightSum="100"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/malwaresDetected">
-
-        <!-- Bar 1 -->
-        <View
-            android:id="@+id/bar3"
-            android:layout_width="0dp"
-            android:layout_height="20dp"
-            android:layout_weight="33"
-            android:background="#8E8C8C" />
-
-        <!-- Bar 2 -->
-        <View
-            android:id="@+id/bar4"
-            android:layout_width="0dp"
-            android:layout_height="20dp"
-            android:layout_weight="33"
-            android:background="#e74c3c" />
-
-        <!-- Bar 3 -->
-        <View
-            android:id="@+id/bar5"
-            android:layout_width="0dp"
-            android:layout_height="20dp"
-            android:layout_weight="34"
-            android:background="#2ecc71" />
-
-        <!-- Bar 3 -->
-        <View
-            android:id="@+id/bar6"
-            android:layout_width="0dp"
-            android:layout_height="20dp"
-            android:layout_weight="0"
-            android:background="@color/white" />
-
-    </LinearLayout>
-
     <Button
         android:id="@+id/DeleteMalware"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="100dp"
-        android:layout_marginTop="70dp"
-        android:layout_marginEnd="100dp"
         android:text="Delete Malware"
         app:icon="@android:drawable/ic_menu_delete"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+        app:layout_constraintTop_toBottomOf="@+id/testView"
+        app:layout_constraintVertical_bias="0.22"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/testView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Features"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/malwaresDetected"
+        app:layout_constraintVertical_bias="0.197" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
